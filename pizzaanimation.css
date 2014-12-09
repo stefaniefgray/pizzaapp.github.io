@@ -1,0 +1,383 @@
+.h1 {
+  font-family: "Open Sans", serif;
+  font-color: "red";
+}
+
+/*****************
+     Pepperoni
+ *****************/
+/*****************
+     Mushrooms
+ *****************/
+/*****************
+      Bacon
+ *****************/
+.crust {
+  margin: 50px auto;
+  width: 140px;
+  height: 140px;
+  background-color: peru;
+  border-radius: 50%;
+  position: relative;
+}
+
+.cheese {
+  width: 120px;
+  height: 120px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 7%;
+  left: 7%;
+}
+
+/*****************
+ P E P P E R O N I
+ *****************/
+.pepperoni {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pepperoni {
+  width: 10px;
+  height: 10px;
+}
+
+.pepperoni.one {
+  top: 15%;
+  left: -20%;
+  transform-origin: 25px 25px;
+  animation: peponetofive 1.5s 0.5s linear forwards;
+}
+
+.pepperoni.two {
+  top: -48%;
+  left: 46%;
+  transform-origin: -25px 45px;
+  animation: peponetofive 1.5s 0.6s linear forwards;
+}
+
+.pepperoni.three {
+  top: 107%;
+  left: 28%;
+  transform-origin: 30px -35px;
+  animation: peponetofive 1.5s 0.7s linear forwards;
+}
+
+.pepperoni.four {
+  top: 44%;
+  left: 1%;
+  transform-origin: 25px 25px;
+  animation: peponetofive 1.5s 1.5s linear forwards;
+}
+
+.pepperoni.five {
+  top: 14%;
+  left: 81%;
+  transform-origin: -25px 45px;
+  animation: peponetofive 1.5s 1.6s linear forwards;
+}
+
+.pepperoni.six {
+  top: 105%;
+  left: 25%;
+  transform-origin: 30px -35px;
+  animation: pepsix 1.5s 1.8s linear forwards;
+}
+
+.pepperoni.seven {
+  top: 13%;
+  left: 28%;
+  transform-origin: 25px 25px;
+  animation: pepseven 1.5s 2.0s linear forwards;
+}
+
+.pepperoni.eight {
+  top: 4%;
+  left: 57%;
+  transform-origin: -25px 45px;
+  animation: pepeight 1.2s 2.0s linear forwards;
+}
+
+.pepperoni.nine {
+  top: 90%;
+  left: 50%;
+  transform-origin: 30px -35px;
+  animation: pepnine 1.3s 2.0s linear forwards;
+}
+
+.pepperoni.ten {
+  top: 47%;
+  left: 31%;
+  transform-origin: 25px 25px;
+  animation: pepten 1.4s 2.0s linear forwards;
+}
+
+.pepperoni.eleven {
+  top: -17%;
+  left: 39%;
+  transform-origin: -25px 45px;
+  animation: pepeleven 1.5s 2.0s linear forwards;
+}
+
+/*****************
+ M U S H R O O M S
+ *****************/
+.mushroom {
+  position: relative;
+  z-index: 5;
+}
+
+.cap, .stalk {
+  background-color: inherit;
+}
+
+.cap {
+  position: absolute;
+  height: 10px;
+  width: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.stalk {
+  position: absolute;
+  height: 20px;
+  width: 10px;
+  top: 1px;
+  left: 5px;
+}
+
+.mushroom.one {
+  top: -2%;
+  left: 38%;
+  transform: rotate(-20deg);
+  animation: shroomone 1.2s 1.0s linear forwards;
+}
+
+.mushroom.two {
+  top: 23%;
+  left: -56%;
+  transform: rotate(-115deg);
+  animation: shroomtwo 1.4s 1.3s linear forwards;
+}
+
+.mushroom.three {
+  top: 90%;
+  left: 39%;
+  transform: rotate(90deg);
+  animation: shroomthree 0.9s 2.0s linear forwards;
+}
+
+.mushroom.four {
+  top: 45%;
+  left: 38%;
+  transform: rotate(-30deg);
+  animation: shroomfour 1.5s 1.5s linear forwards;
+}
+
+/*****************
+	B A C O N  
+ *****************/
+.bacon, .crease {
+  transform: skewY(15deg);
+}
+
+.bacon {
+  background-color: #AE3D37;
+  width: 8px;
+  height: 20px;
+  position: relative;
+}
+
+.crease {
+  background-color: #DC8672;
+  width: 3px;
+  height: 20px;
+  position: absolute;
+  left: 32%;
+}
+
+.bacon.one {
+  top: 50%;
+  left: 60%;
+  opacity: 0;
+  transform: rotate(-670deg);
+  animation: baconone 1.5s 3.0s linear forwards;
+}
+
+.bacon.two {
+  top: 20%;
+  left: 30%;
+  opacity: 0;
+  transform: rotate(-800deg);
+  animation: bacontwo 1.5s 3.0s linear forwards;
+}
+
+.bacon.three {
+  top: 5%;
+  left: 55%;
+  transform: rotate(1100deg);
+  opacity: 0;
+  animation: baconthree 1.5s 3.0s linear forwards;
+}
+
+/***********************************************
+
+	Animations!!!!
+
+*************************************************/
+@keyframes peponetofive {
+  0% {
+    transform: translateX(500px) scale(1) rotate(110deg);
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0) scale(1) rotate(500deg);
+  }
+}
+@keyframes pepsix {
+  0% {
+    transform: translateX(500px) scale(1.5) rotate(110deg);
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0) scale(1.5) rotate(500deg);
+  }
+}
+@keyframes pepseven {
+  0% {
+    transform: translateX(500px) scale(1.5) rotate(110deg);
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0) scale(1.5) rotate(500deg);
+  }
+}
+@keyframes pepeight {
+  0% {
+    transform: translateX(500px) scale(1.3) rotate(110deg);
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0) scale(1.3) rotate(500deg);
+  }
+}
+@keyframes pepnine {
+  0% {
+    transform: translateX(500px) scale(1.3) rotate(110deg);
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0) scale(1.3) rotate(500deg);
+  }
+}
+@keyframes pepten {
+  0% {
+    transform: translateX(500px) scale(1.4) rotate(110deg);
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0) scale(1.4) rotate(500deg);
+  }
+}
+@keyframes pepeleven {
+  0% {
+    transform: translateX(500px) scale(1.6) rotate(110deg);
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+    transform: translateX(0) scale(1.6) rotate(500deg);
+  }
+}
+@keyframes shroomone {
+  0% {
+    transform: translateX(500px) rotate(0deg);
+    background-color: transparent;
+  }
+  100% {
+    transform: translateX(0) rotate(-20deg);
+    top: -2%;
+    left: 38%;
+    background-color: tan;
+  }
+}
+@keyframes shroomtwo {
+  0% {
+    transform: translateX(500px) rotate(0deg);
+    background-color: transparent;
+  }
+  100% {
+    transform: translateX(0) rotate(-115deg);
+    top: 23%;
+    left: -56%;
+    background-color: tan;
+  }
+}
+@keyframes shroomthree {
+  0% {
+    transform: translateX(500px) rotate(0deg);
+    background-color: transparent;
+  }
+  100% {
+    transform: translateX(0) rotate(90deg);
+    top: 90%;
+    left: 39%;
+    background-color: tan;
+  }
+}
+@keyframes shroomfour {
+  0% {
+    transform: translateX(500px) rotate(0deg);
+    background-color: transparent;
+  }
+  100% {
+    transform: translateX(0) rotate(-30deg);
+    top: 45%;
+    left: 38%;
+    background-color: tan;
+  }
+}
+@keyframes baconone {
+  0% {
+    transform: translateX(500px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(-670deg);
+    top: 50%;
+    left: 60%;
+    opacity: 1;
+  }
+}
+@keyframes bacontwo {
+  0% {
+    transform: translateX(500px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(-800deg);
+    top: 20%;
+    left: 30%;
+    opacity: 1;
+  }
+}
+@keyframes baconthree {
+  0% {
+    transform: translateX(500px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(1100deg);
+    top: 5%;
+    left: 55%;
+    opacity: 1;
+  }
+}
